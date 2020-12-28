@@ -1,22 +1,22 @@
 name: r2s Lean版openwrt minimal 
 
 on:
-  workflow_dispatch:
+  
   push:
     branches: [ master ]
     paths:
       - '.github/workflows/r2s_lean_minimal.yml'
   #schedule:
   #  - cron: '40 06 * * *'
-
-  #  ref: refs/heads/master
+  workflow_dispatch:
+    ref: refs/heads/master
 
 jobs:
 
   build:
 
     runs-on: ubuntu-18.04
-    if: github.repository == 'biliwala/nanopi-openwrt'
+    if: github.repository == 'supppig/nanopi-openwrt'
 
     steps:
 
