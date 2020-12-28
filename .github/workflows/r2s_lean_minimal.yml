@@ -7,8 +7,6 @@ on:
       - '.github/workflows/r2s_lean_minimal.yml'
   #schedule:
   #  - cron: '40 06 * * *'
-  watch:
-    types: started
   workflow_dispatch:
     ref: refs/heads/master
 
